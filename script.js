@@ -58,7 +58,7 @@ function nextSlide() {
 }
 
 // Auto slide every 5 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 8000);
 
 // See More Button for Images
 document.getElementById('seeMoreBtn').addEventListener('click', function() {
@@ -102,7 +102,7 @@ function animateCounter(target, duration) {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            animateCounter('studentCount', 8000);
+            animateCounter('studentCount', 5000);
             observer.unobserve(entry.target);
         }
     });
