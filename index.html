@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazi Mohammad Mohasin Hall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-blue-600 text-white p-4 flex justify-between items-center sticky top-0 z-50 shadow-md h-20">
+        <div class="text-2xl font-bold logo">Hazi Mohammad Mohasin Hall</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-blue-200 nav-link">Home</a>
+            <a href="#info" class="hover:text-blue-200 nav-link">Informations</a>
+            <a href="#images" class="hover:text-blue-200 nav-link">Images</a>
+            <a href="#location" class="hover:text-blue-200 nav-link">Location</a>
+        </div>
+
+        <div>
+            <a href="https://www.aeiag.edu.bd/" id="btn" class="visit-btn-nav bg-white hover:bg-gray-200 px-4 py-3 rounded-md font-bold transition text-blue-600" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Visit Our College</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white" id="mobileMenuBtn">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="md:hidden bg-blue-700 text-white hidden" id="mobileMenu">
+        <div class="flex flex-col space-y-3 p-4">
+            <a href="#home" class="hover:text-blue-200">Home</a>
+            <a href="#info" class="hover:text-blue-200">Informations</a>
+            <a href="#images" class="hover:text-blue-200">Images</a>
+            <a href="#location" class="hover:text-blue-200">Location</a>
+            <button class="visit-btn-footer bg-white hover:bg-gray-200 px-4 py-2 rounded-md font-bold transition text-blue-600 w-full">
+                <a href="https://www.aeiag.edu.bd/" target="_blank" class="w-full h-full block text-center">
+                    Visit Our College
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="reveal h-screen flex flex-col" style="height: calc(100vh - 80px);">
+        <!-- Image Slider (3/4 of the screen) -->
+        <div class="image-slider">
+            <div class="slide active" style="background-image: url('./images/bg.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/Fiverr\ GiG\ Image-Recovered.png');"></div>
+            <div class="slide" style="background-image: url('./images/Fiverr\ GiG\ Image-Tailwind.png');"></div>
+            <div class="slide" style="background-image: url('./images/Python\ Course\ Thambnail\ 4.png');"></div>
+            <div class="slide" style="background-image: url('./images/abstract-2709402_1920.png');"></div>
+        </div>
+
+        <!-- Title & Description (1/4 of the screen) -->
+        <div class="flex-1 bg-white px-8 py-4 flex flex-col  items-center text-center bg-red-500">
+            <h1 class="text-4xl font-bold mb-4 text-blue-800">Welcome to Our Hostel</h1>
+            <p class="text-gray-700 max-w-2xl">
+                A comfortable and affordable living space for students. Our hostel provides all necessary amenities to make your stay pleasant.
+            </p>
+        </div>
+
+        <!-- Fixed Facebook Button -->
+        <div class="fixed-facebook-btn">
+            <a href="https://www.facebook.com/share/g/16DiBavj8B/" target="_blank" class="bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Information Section -->
+    <section id="info" class="reveal py-16 bg-gray-100 h-screen">
+        <div class="container mx-auto px-4">
+            <!-- Title & Description (1/3 of the section) -->
+            <div class="text-center my-12">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Hostel Information</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    Our hostel is managed by experienced teachers who ensure a safe and conducive environment for students.
+                </p>
+            </div>
+
+            <!-- Teacher Cards (2/3 of the section) -->
+            <div class="info-cards grid grid-cols-1 md:grid-cols-2 gap-8 mt-28">
+                <!-- Teacher 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-5">
+                    <img src="./images/20240518_215728.png" alt="Teacher 1" class="w-44 h-44 rounded-3xl object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-800">John Doe</h3>
+                        <p class="text-gray-600 mb-2">Mathematics Teacher</p>
+                        <p class="text-gray-700 mb-2">Passionate about teaching and student welfare.</p>
+                        <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i>john@example.com</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+1234567890</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+0987654321</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+                    <img src="./images/20240518_215728.png" alt="Teacher 1" class="w-44 h-44 rounded-3xl object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-800">Jane Smith</h3>
+                        <p class="text-gray-600 mb-2">Science Teacher</p>
+                        <p class="text-gray-700 mb-2">Dedicated to creating a positive learning environment.</p>
+                        <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i>jane@example.com</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+1122334455</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+5566778899</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+                    <img src="./images/20240518_215728.png" alt="Teacher 1" class="w-44 h-44 rounded-3xl object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-800">Robert Johnson</h3>
+                        <p class="text-gray-600 mb-2">English Teacher</p>
+                        <p class="text-gray-700 mb-2">Committed to student growth and development.</p>
+                        <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i>robert@example.com</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+3344556677</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+7788990011</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+                    <img src="./images/20240518_215728.png" alt="Teacher 1" class="w-44 h-44 rounded-3xl object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-800">Robert Johnson</h3>
+                        <p class="text-gray-600 mb-2">English Teacher</p>
+                        <p class="text-gray-700 mb-2">Committed to student growth and development.</p>
+                        <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i>robert@example.com</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+3344556677</p>
+                        <p class="text-gray-700"><i class="fas fa-phone mr-2"></i>+7788990011</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Images Section -->
+    <section id="images" class="reveal py-16 bg-white h-screen">
+        <div class="container mx-auto px-4">
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Hostel Images</h2>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                <!-- Image 1 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+1')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+1" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 1</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+2')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+2" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 2</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+3')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+3" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 3</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+4')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+4" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 4</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+5')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+5" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 5</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+6')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+6" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 6</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+4')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+4" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 4</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+5')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+5" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 5</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="relative group cursor-pointer" ondblclick="openFullscreen('https://via.placeholder.com/800x600?text=Hostel+Room+6')">
+                    <img src="https://via.placeholder.com/800x600?text=Hostel+Room+6" alt="Hostel Room" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p>Hostel Room 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More Button -->
+            <div class="text-center">
+                <button id="seeMoreBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-semibold transition">
+                    See More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="reveal py-16 bg-gray-100 h-screen">
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Our Hostel Location</h2>
+            
+            <!-- Input Field for Location -->
+            <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md mb-8">
+                <div class="flex items-center gap-2 mb-4">
+                    <input type="text" id="userLocation" placeholder="Your Location" class="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span class="text-lg font-semibold">- to Our Hostel</span>
+                    <button id="goBtn" class="w-28 ml-5 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-semibold transition">
+                        Go
+                    </button>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="bg-white p-4 rounded-lg shadow-md bg-gray-200">
+                <div id="map" class="w-full h-64 md:h-96 bg-gray-200 rounded-lg overflow-hidden">
+                    <!-- Google Map will be loaded here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15659.981122235145!2d89.40324400827818!3d23.00950759578895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ffa1a882da10c3%3A0x5d59d2e7c5d9c494!2sHazi%20Mohammad%20Mohasin%20Hall!5e1!3m2!1sen!2sbd!4v1745828362839!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Count Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Our Happy Students</h2>
+            <div class="flex items-center justify-center">
+                <div class="text-5xl font-bold" id="studentCount">320</div>
+                <div class="text-5xl font-bold mb-2">+</div>
+            </div>
+            <p>and counting...</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold logo">Hazi Mohammad Mohasin Hall</h3>
+                    <p class="text-gray-400">A comfortable living space for students</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/share/g/16DiBavj8B/" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 Hazi Mohammad Mohasin Hall. All rights reserved.</p>
+                <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-semibold transition" id="adminLoginBtn">
+                    Login as Admin
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Image Viewer (Hidden by default) -->
+    <div id="fullscreenViewer" class="fullscreen-image hidden">
+        <img id="fullscreenImg" src="" alt="Fullscreen Image">
+        <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+    </div>
+
+    <!-- Admin Login Modal (Hidden by default) -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4">Admin Login</h3>
+            <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Username</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Password</label>
+                <input type="password" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex justify-end space-x-4">
+                <button onclick="document.getElementById('adminModal').classList.add('hidden')" class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100">Cancel</button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body> 
+</html>        
